@@ -1,0 +1,89 @@
+🔍 Full Database Structure Overview
+Your database consists of multiple interconnected tables, each serving a specific role.
+
+1️⃣ Games Table (games)
+- Stores Batman-related video games including titles, genre, and release dates.
+- Acts as a primary reference for characters and missions.
+CREATE TABLE games (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    genre VARCHAR(100),
+    release_date DATE,
+    developer VARCHAR(255)
+);
+
+2️⃣ Characters Table (characters)
+- Stores heroes, villains, and side characters.
+- Linked to games via game_id, ensuring each character belongs to a specific game.
+CREATE TABLE characters (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    game_id INT NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    alias VARCHAR(255),
+    role VARCHAR(100),
+    base_of_operations VARCHAR(255),
+    FOREIGN KEY (game_id) REFERENCES games(id) ON DELETE CASCADE
+);
+
+3️⃣ Missions Table (missions)
+- Stores main quests and side missions appearing within each game.
+- Linked to games via game_id, ensuring missions belong to a specific game title.
+CREATE TABLE missions (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    game_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    objectives TEXT NOT NULL,
+    difficulty VARCHAR(50),
+    FOREIGN KEY (game_id) REFERENCES games(id) ON DELETE CASCADE
+);
+
+4️⃣ Abilities Table (abilities)
+- Stores unique abilities for characters like Batman’s "Detective Vision" or Joker’s "Chaos Tactics."
+- Linked to characters via character_id, ensuring each ability belongs to the right character.
+CREATE TABLE abilities (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    character_id INT NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE
+);
+
+5️⃣ Gear Table (gears)
+- Stores equipment used by characters, such as Batman’s "Batarang" or Red Hood’s "Dual Pistols."
+- Linked to characters via character_id, ensuring each gear item belongs to a specific character.
+CREATE TABLE gears (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    character_id INT NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE
+);
+
+6️⃣ Locations Table (locations)
+- Stores important locations in Gotham and beyond, including hideouts, enemy bases, and mission settings.
+CREATE TABLE locations (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL
+);
+
+
+7️⃣ Vehicles Table (vehicles)
+- Stores Batmobiles, motorcycles, and enemy vehicles used in various Batman games.
+- Linked to characters via character_id, ensuring vehicle ownership is maintained.
+CREATE TABLE vehicles (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    character_id INT NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE
+);
+
+🔗 Relationships Between Tables
+Your database relies on foreign keys to establish relationships:
+⚡ Primary Connections
+✅ Characters ↔ Games → (game_id in characters connects to id in games).
+✅ Missions ↔ Games → (game_id in missions connects to id in games).
+✅ Abilities ↔ Characters → (character_id in abilities connects to id in characters).
+✅ Gear ↔ Characters → (character_id in gears connects to id in characters).
+✅ Vehicles ↔ Characters → (character_id in vehicles connects to id in characters).

@@ -1,0 +1,406 @@
+{
+    "characters": [
+        {
+            "name": "Alfred Pennyworth (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/AlfredPennyworth.jpg",
+            "classification": "Arkham",
+            "archetype": "Heroes",
+            "bio": [
+                "After a varied career, Alfred Pennyworth was employed as the Wayne family's butler when Bruce Wayne's parents were killed. Alfred raised the young orphan and reluctantly aided him in his quest to become Batman. ",
+                "His many skills, ranging from cooking to medicine - made him Batman's staunchest ally, along with a formal demeanor that grounded the Dark Knight and deflected those who might otherwise suspect Bruce Wayne's true identity. ",
+                "Alfred showed that he cared for Bruce as his own son, one sign of this love being Batman's ally. Alfred stayed with his adopted son without hesitation and continued to aid him in his war."
+            ]
+        },
+        {
+            "name": "Bane (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Bane.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Bane is a supervillain that utilises a steroid serum Venom to achieve superhuman strength, durability, and agility.\n\n",
+                "Bane was imprisoned from birth and subjected to military experiments with Venom. He used his strength and willpower to escape and became a criminal seeking to build an empire. ",
+                "Bane was the one to literally and figuratively break the Dark Knight's spine but ultimately got defeated by him when the Venom body supply got cut off."
+            ]
+        },
+        {
+            "name": "Batgirl (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Batgirl.jpg",
+            "classification": "Arkham",
+            "archetype": "Heroes",
+            "bio": [
+                "Barbara Gordon is the daughter of Gotham City's Police Commissioner James Gordon, and was forbidden by her overprotective father from joining the GCPD. ",
+                "Instead, she took on the identity of Batgirl and was a crime-fighting partner of Batman's for years. But that all ended when the Joker shot her through the spine. ",
+                "Paralysed from the waist down and using a wheelchair, Barbara adopted the new identity of Oracle, and aided the Dark Knight with her computer expertise, which provided Batman with a constant stream of information in the field to aid his battle against crime."
+            ]
+        },
+        {
+            "name": "Batman (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Batman.jpg",
+            "classification": "Arkham",
+            "archetype": "Heroes",
+            "bio": [
+                "When his parents were gunned down in front of him, young Bruce Wayne resolved to rid Gotham City of the criminal element that took their lives. He trained extensively to achieve mental and physical perfection, in addition to mastering martial arts, detective techniques, and criminal psychology. ",
+                "When he returned, Bruce was inspired by a bat in his ancestral home of Wayne Manor. He then became Batman who fought crime with the aid of specialized gadgets and vehicles and operated out of a secret Batcave underneath Wayne Manor."
+            ]
+        },
+        {
+            "name": "Black Mask (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/BlackMask.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Following the suspicious deaths of his multi-millionaire parents in a fire, Roman Sionis inherited their fortune and then went on to bankrupt their company. ",
+                "Saved by a buy out from Bruce Wayne, Sionis came to resent and hate his rescuer. Fixated on the concept of masks, Sionis carved one from his father's black coffin and sought revenge, becoming the Black Mask. ",
+                "Sionis was a feared gang leader and one of the most powerful mob bosses in Gotham City, with a burning hatred of Batman."
+            ]
+        },
+        {
+            "name": "Calendar Man (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/CalendarMan.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Fixated on the calendar, Julian Gregory Day became Calendar Man, a villain who timed and tied his murders thematically to certain holidays throughout the year, and often left clues by which he could be caught.\n\n",
+                "Gotham City's hopes for a day off were often clouded by the knowledge that any holiday of note was likely to be shadowed by Calendar Man's presence."
+            ]
+        },
+        {
+            "name": "Catwoman (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Catwoman.jpg",
+            "classification": "Arkham",
+            "archetype": "Heroes",
+            "bio": [
+                "Selina Kyle, also known by her alias Catwoman, was an orphan who learned to survive on Gotham City's streets. She took to thievery to survive, but was determined to do it in her own style. She learned martial arts and trained extensively to perfect her own skills at cat burglary. ",
+                "Her criminal activities are often tempered by a reluctant altruism, making her an inconstant villain and occasional heroine. She steals objects with feline names or motifs. ",
+                "She regularly eludes capture by the Dark Knight, and maintains a complicated, adversarial relationship with Batman that frequently turns flirtatious and occasionally romantic. Over the years, their relationship developed to become increasingly reliable allies."
+            ]
+        },
+        {
+            "name": "Clayface (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Clayface.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Originally an actor in Horror B-Movie films, Basil Karlo went mad when he found out that a classic film of his was to be remade without his involvement. ",
+                "He then took on the mask of the film's villain, \"Clayface\", and killed several of the remake's cast and crew before eventually being stopped by Batman and Robin.\n\n",
+                "Later, Karlo stole some experimental compounds, injected himself with the compound, and became a superhuman imbued with the abilities to change shape, melt into protoplasm with a touch, and mimicked the powers of heroes or villains that he copied."
+            ]
+        },
+        {
+            "name": "Copperhead (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Copperhead.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Copperhead was an expert escape artist and an assassin with a skill in contortionism and judo, who was apparently a gang member from a Central American drug cartel who worked as a contract killer. ",
+                "She appeared to have advanced combat techniques and possessed many reptilian features, such as her forked tongue, slit pupils, and venomous talons. ",
+                "She is also known to balk at wearing footwear and non-restrictive clothing."
+            ]
+        },
+        {
+            "name": "Deadshot (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Deadshot.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Floyd Lawton, better known as Deadshot, is a mercenary and an old enemy of Batman. A 200 lb, 6'1\" Caucasian male, he was considered to be the world's deadliest assassin (possibly behind Deathstroke) and never missed a shot, especially with his pair of silenced, wrist-mounted 9mm cannons. ",
+                "Deadshot disdained himself almost as much as his targets. Several prison psychologists had diagnosed him with \"suicidal tendencies.\" ",
+                "Prior to his encounter with Batman, Deadshot had six counts of murder of the first degree, including the assassination of a government official, was potentially suffering from clinical depression, and was 27 at the time when he first encountered Batman."
+            ]
+        },
+        {
+            "name": "DeathStroke (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/DeathStroke.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Originally a Lieutenant Colonel in the U.S. Army during the Vietnam War, Slade Wilson was part of an experimental super-soldier program where he gained enhanced strength, agility, healing factor and intelligence. ",
+                "Deathstroke became a mercenary soon after the experiment and rapidly gained a reputation as one of the world's greatest assassins."
+            ]
+        },
+        {
+            "name": "Firefly (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Firefly.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "A pyromaniac, Garfield Lynns, also known as Firefly, began as a petty criminal, but he soon graduated to major crimes as a terrorist that centered around arson by torching huge parts of Gotham City in the process. ",
+                "But Lynn's fires soon raged out of his control, which left him horribly scarred by one of his own blazes. Lynn's body was almost fully covered with burns, and he wore a full-body flame-retardant suit when he was out pursuing his criminal interests between bouts of incarceration at Blackgate Prison. ",
+                "By the time of Batman's second year, Firefly managed to earn 178 counts of arson, 52 of which resulted in various deaths, 4 counts of murder of the first degree, and 10 counts of robbery. He was alleged to steal chemical materials in bulk, such as aviation fuels, chemical primers, and restricted reagents, likely to create the chemicals required to use his equipment."
+            ]
+        },
+        {
+            "name": "Harley Quinn (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/HarleyQuinn.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "An Arkham Asylum psychiatrist, who begged and eventually convinced her superiors to treat the Joker; Dr. Harleen Quinzel became obsessively fixated on her patient and believed herself to be in love with him. ",
+                "She helped him escape from confinement and took on her own criminal identity as Harley Quinn. Harley was a violent and unpredictable felon whose only motivation, beyond general mayhem, was achieving the Joker’s approval. ",
+                "Because of the Joker's cruel and mercurial nature, this in some ways made Harley just another one of his victims - albeit a very dangerous one."
+            ]
+        },
+        {
+            "name": "Hugo Strange (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/HugoStrange.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Professor Hugo Strange first gained fame as a psychiatrist who declared that he had fully analyzed the Dark Knight from afar, and later lent credence to his own claims by deducing Batman’s true identity as Bruce Wayne. ",
+                "However, his interest in the Batman turned into a deranged obsession, and he used his medical expertise to hatch a series of bizarre plots based around genetics and mind control in order to defeat the hero and take his place as Gotham's savior. ",
+                "But this was not Strange's ultimate ambition: in the event of his victory, Strange's secret \"master\" had promised him command of forces beyond Batman's comprehension."
+            ]
+        },
+        {
+            "name": "James Gordon (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/JamesGordon.jpg",
+            "classification": "Arkham",
+            "archetype": "Heroes",
+            "bio": [
+                "Police Commissioner James Gordon dedicated his career to cleaning up the corruption in the Gotham City Police Department, a goal he came a long way toward accomplishing. Gordon was equally tough on crime, and in the pursuit of making Gotham City safe for all its citizens, he forged an uneasy alliance with Gotham's other top crime fighter, the mysterious vigilante known as Batman.\n\n",
+                "With Batman's help, Gordon had a successful war on crime for over a decade, turning Gotham from a city where getting mugged was a part of daily life to a city where everyone felt safe."
+            ]
+        },
+        {
+            "name": "Killer Croc (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/KillerCroc.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Abandoned to his abusive and alcoholic aunt and bullied his entire life due to his appearance -- the result of a genetic disorder he was born with -- Waylon Jones embraced his animal instincts and violently murdered and devoured his aunt after he finally reached his breaking point. ",
+                "Joining a traveling circus and adopting the stage name of \"Killer Croc\", Jones bonded with his fellow carnival workers and felt like he had a family for the first time.\n\n",
+                "That came to a tragic end, however, when vicious audience members in Gotham City destroyed the carnival and killed all whom Jones had felt affection for. Seeking revenge on all humanity for their crimes, Croc began to devour countless individuals to survive, and became a monster in both body and spirit. ",
+                "Driven by hatred and a lust for blood, Croc regularly worked with Gotham's various mob organizations as a brutal and cannibalistic hit-man to satisfy his appetite for violence and money. Seeing all humans as selfish and judgmental sacks of flesh, Jones took orders from anyone who could provide him with money and a larger scope of victims."
+            ]
+        },
+        {
+            "name": "Lucius Fox (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/LuciusFox.jpg",
+            "classification": "Arkham",
+            "archetype": "Heroes",
+            "bio": [
+                "Lucius Fox is the current CEO and President of Wayne Enterprises, a businessman all over the corporate world and one of Bruce Wayne's closest allies. Fox is a shrewd and experienced businessman, entrepreneur, and inventor. ",
+                "Aside from running Wayne Enterprises and the Wayne Foundation, Fox also takes pride in developing weapons, gadgets, vehicles and armor for Bruce Wayne's alter ego, Batman."
+            ]
+        },
+        {
+            "name": "Mad Hatter (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/MadHatter.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Obsessed from a young age with Lewis Carroll's books Alice's Adventures in Wonderland and its sequel Through The Looking Glass, Jervis Tetch, an expert hypnotist, embraced a delusion that he was the incarnation of a character in the story, The Mad Hatter.\n\n",
+                "By using his skills for mesmerism, the Mad Hatter committed many crimes that were often themed around the book that inspired him and his love of hats and headgear, and went so far as to implant his hats with mind-control chips to amplify his hypnotic abilities. ",
+                "The Mad Hatter was also obsessed with the concept of \"Alice\", and brainwashed countless young women in his attempts to find Alice, and murdered them when he was finished with them."
+            ]
+        },
+        {
+            "name": "Mr Freeze (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/MrFreeze.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Victor Fries was a brilliant cryogenicist and former GothCorp. employee whose beloved wife, Nora, was stricken with Huntingdon’s Disease. ",
+                "Fries placed Nora in suspended animation while he obsessively searched for a way to cure her, but the corporation that funded his research - and Nora's life - pulled the plug and triggered an accident that transformed Fries' body into a cold-blooded form that must always be kept at absolute zero, better known as Mr. Freeze. At normal room temperature, he would die.\n\n",
+                "While wielding a number of cryogenic weapons, Freeze wore protective armor on his quest to bring back his lovely wife and avenge her fate - which he partly held Batman responsible for."
+            ]
+        },
+        {
+            "name": "Nightwing (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Nightwing.jpg",
+            "classification": "Arkham",
+            "archetype": "Heroes",
+            "bio": [
+                "Raised by his parents (better known as the \"Flying Graysons\") in Haly's Circus, Dick Grayson was trained to be incredibly acrobatic. His parents were killed after criminals had failed to extort money from the circus. Dick was soon adopted by billionaire Bruce Wayne, who shared his secret identity and extensively trained the boy to become Batman's sidekick, the first Robin. ",
+                "After he aided Batman for years, Dick eventually moved on and became a hero in his own right. As Nightwing, he patrolled Gotham City and Blüdhaven, and worked with Batman no longer as a sidekick, but as an ally."
+            ]
+        },
+        {
+            "name": "Oracle (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Oracle.jpg",
+            "classification": "Arkham",
+            "archetype": "Heroes",
+            "bio": [
+                "Barbara Gordon is the daughter of Gotham City's Police Commissioner James Gordon, and was forbidden by her overprotective father from joining the GCPD. ",
+                "Instead, she took on the identity of Batgirl and was a crime-fighting partner of Batman's for years. But that all ended when the Joker shot her through the spine. ",
+                "Paralysed from the waist down and using a wheelchair, Barbara adopted the new identity of Oracle, and aided the Dark Knight with her computer expertise, which provided Batman with a constant stream of information in the field to aid his battle against crime."
+            ]
+        },
+        {
+            "name": "Poison Ivy (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/PoisonIvy.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Botanist Pamela Lillian Isley was transformed into a plant-human hybrid by a science experiment gone wrong. With chlorophyll flowing through her veins instead of blood, she developed a toxic touch and a pheromone-fueled talent for seduction.\n\n",
+                "Her crimes became more ecologically focused as she had increasingly abandoned her human side and identified more with the natural world. Her unique brand of eco-terrorism often put her into conflict with Batman, whose iron will usually protected him from her seductive powers."
+            ]
+        },
+        {
+            "name": "Ra's Al Ghul (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Ra'sAlGhul.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Rā's al Ghūl is a radical international Eco-Terrorist who had been around for hundreds of years. Rā's believed that the evils of humanity were a blight on our planet, and sought to extinguish them through whatever means that he deemed necessary.\n\n",
+                "Through an international cabal named the League of Assassins, Rā's manipulated world events to achieve his own ends. That frequently put Rā's into conflict with Batman, one of the very few adversaries that he deemed worthy enough of himself, and who he encouraged to marry his daughter, Talia al Ghul.\n\n",
+                "Although most of Rā's power came from his immense influence, he is also a formidable combatant, having the benefit of many lifetimes worth of experience and accumulated skill. Rā's achieved his immortality through the ancient Lazarus Pits. His name literally translates to Demon's Head, or Head of the Demon."
+            ]
+        },
+        {
+            "name": "Red Hood (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/RedHood.jpg",
+            "classification": "Arkham",
+            "archetype": "Heroes",
+            "bio": [
+                "The Red Hood was the alias of a particularly infamous criminal active during Batman's early years as the Caped Crusader. ",
+                "As indicated by the name, the criminal wore a red bowl-shaped helmet as a means of covering his identity, although it is strongly implied that the person wearing the disguise was always different. ",
+                "The Red Hood is most notorious as being the former identity of The Joker prior to his encounter with Batman.\n\n",
+                "Since Jason Todd changed the Arkham Knight persona, he was able to lay his long-rooted vengeance against Batman to rest, and began to heal the damage that Joker inflicted on him at Arkham Asylum. It was during this recovery that the Red Hood was born, and is implied to have become the permanent holder of the identity. However, while he was once again aligned with his former mentor in wanting to rid Gotham City of its criminal contingent, Todd's willingness to take lives will forever keep them at odds."
+            ]
+        },
+        {
+            "name": "Robin (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Robin.jpg",
+            "classification": "Arkham",
+            "archetype": "Heroes",
+            "bio": [
+                "Tim Drake was in the audience when the Flying Graysons were murdered, and where he witnessed Batman leap to the scene. Inspired by Batman's heroics, Tim closely followed the chronicles of Batman and Robin.\n\n",
+                "Eventually deducing their secret identities by using self-taught detective skills, Tim convinced Bruce Wayne and Dick Grayson - as Nightwing - that a new Robin was needed in the never-ending battle for justice.\n\n",
+                "Tested by the Dark Knight himself with a grueling training regimen, Tim earned the right to become Robin, and lived up to the name."
+            ]
+        },
+        {
+            "name": "Shiva (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Shiva.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Lady Shiva was a highly trained and extremely dangerous assassin from a multiracial background, whose skills were known to be unmatched. She selected many of her targets simply to test her skills, but there were no known survivors. ",
+                "Shiva exploited the opportunity to implement several operations throughout Gotham City that would serve as seeds for massive plans instrumental in an insidious conspiracy to wipe Gotham clean of corruption, crime, pollution, and most of its population in the years to come.\n\n",
+                "Under the orders of Ra's al Ghul, the mastermind and leader of the secret and worldwide organization, the League of Assassins, Shiva was put in command of a squadron of his trained soldiers, and used them to murder corrupt cops and countless criminals in order to lure Batman into a series of tests to see if he would be a worthy addition to the organization, perhaps even to serve as Ra's right-hand man and eventual successor."
+            ]
+        },
+        {
+            "name": "Solomon Grundy (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/SolomonGrundy.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Over a century ago, murderer Cyrus Gold sought to escape justice by hiding in Slaughter Swamp, where he met a fate worse than death. Mysterious forces doomed the now immortal Solomon Grundy to an endless cycle of death and rebirth."
+            ]
+        },
+        {
+            "name": "Talia Al Ghul (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/TaliaAlGhul.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "The headstrong daughter of Ra's al Ghul and on-again/off-again lover of Bruce Wayne, Talia al Ghūl was the second-in-command of the League of Assassins. A master of hand-to-hand combat and swordplay, Talia had dueled with Batman on several occasions and considered him an honorable opponent.\n\n",
+                "Despite Batman's elusiveness, her attraction to him had only increased - an attraction that her father encouraged in his mad quest for a male heir. Talia knew that one day she may be forced to choose between her father and her Beloved."
+            ]
+        },
+        {
+            "name": "The Arkham Knight (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/TheArkhamKnight.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "The Arkham Knight is a mysterious military villain who emerged in Gotham City and was the antithetical version of Batman. He wore a militaristic \"Batsuit\" and had an Arkham symbol on his chest. He formed an Alliance with Scarecrow and Deathstroke to transform Gotham into a city of fear and end the Dark Knight. ",
+                "He was revealed as Jason Todd, formerly Robin before the Joker's torture at Arkham Asylum, but later abandoned the Arkham Knight persona when he realized Batman's trust and became the vigilante known as Red Hood."
+            ]
+        },
+        {
+            "name": "The Electrocutioner (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/TheElectrocutioner.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Lester Buchinsky was an egotistical street punk of limited intelligence and resourcefulness (though he also had a skill in electrical engineering) who was eager to make money and a name for himself as The Electrocutioner, among Gotham City's criminal underworld after losing in an underground pit fight. ",
+                "Lester used powerful Shock Gloves that he had created to appropriately electrocute his opponents to death. When he felt like being sadistic, Lester would send his victims into cardiac arrest, only to mockingly defibulate them and kill them once more."
+            ]
+        },
+        {
+            "name": "The Joker (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/TheJoker.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "The Joker is an insane, homicidal supervillain, and the arch nemesis of Batman. His white skin, green hair and blood red lips belied the chaotic nature that underlay his cartoonish appearance. ",
+                "The self-styled Clown Prince of Crime has no superpowers beyond a capacity for incredible violence and a skill at creating deadly mayhem. He frequently concocts elaborate schemes to entrap his arch nemesis, Batman."
+            ]
+        },
+        {
+            "name": "The Militia (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/TheMilitia.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Militia Soldiers are the generic foot-soldiers of the Arkham Knight's Militia. Their mission is to kill Batman, and they have been trained for this task by the Arkham Knight. ",
+                "They wear red, black and white overalls with military style utility belts and gas masks. They are employed in most combat scenarios and are equipped with weaponry and gadgets suitable for the task. Unlike generic thugs, they are very coordinated and can use equipment such as grenades and drones to neutralize targets."
+            ]
+        },
+        {
+            "name": "The Penguin (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/ThePenguin.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Oswald Chesterfield Cobblepot, known in the Gotham City Underworld as The Penguin, is a brutal and sadistic crime lord, who funded criminal operations as one of its biggest black-market manufactures. Originally directing his affairs from a dilapidated ship, the Final Offer, and later operating via the famous Iceberg Lounge nightclub, Oswald was viewed by the public eye as a legitimate businessman to the people of Gotham, but in reality, he is a sadistic, mass murdering gang leader.\n\n",
+                "Cobblepot accumulated his power within Gotham City's criminal underworld and slowly built up his own forces to carve out a piece of the black market for his own profits and purposes. After he formed an alliance with Black Mask, the most powerful and sadistic crime lord in the entire city, the Penguin sought to cripple his competition, particularly the Falcone Crime Family and aid in killing the Dark Knight in order to consolidate his own power over the city."
+            ]
+        },
+        {
+            "name": "The Riddler (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/TheRiddler.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "With an obsessive need for attention and a genius-level intellect, Edward Nigma (formerly Edward Nashton) was determined to be the cleverest of Gotham City's criminals, and concocted an elaborate series of clues and riddles around his crimes. Batman had proven to be a worthy opponent, capable of deducing the Riddler's plans, but Nigma was still dedicated to creating a mystery that would stump even the Dark Knight, even if he had to kill someone to do so.\n\n",
+                "Riddler grew increasingly frustrated and delusional over the years, believing Batman was a cheater who couldn't beat his challenges. The desire to prove himself better than Batman had finally consumed him. This eventually drove him to ensure the Dark Knight didn't have a chance of winning, by eliminating any fair play."
+            ]
+        },
+        {
+            "name": "The Scarecrow (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/TheScarecrow.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Taunted and bullied in his youth, Jonathan Crane has vowed to overcome his fears through the study of psychology and biochemistry on phobias and the nature of fear. Kicked out of the university he taught at for experimenting on human subjects, Crane adopted the identity of the Scarecrow, and armed himself with a specialized fear-inducing gas that makes a person's deepest phobia become a frightening reality."
+            ]
+        },
+        {
+            "name": "Two-Face (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/Two-Face.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "Harvey Dent is Gotham's former District Attorney and one of Batman's strongest allies in Gotham City until Dr. Jonathan Crane accidentally injured and hideously scarred him during the pre-trial hearing of Irving \"Matches\" Malone. ",
+                "The wounds fractured Dent's psyche and he was reborn as Two-Face: a schizoid criminal mastermind obsessed with duality. Two-Face would go on to form his own crew and became one of Gotham’s most feared crime bosses and a part of Batman’s rogues gallery. Using his former good-luck charm, a \"two-headed\" trick silver dollar that was damaged on one side from the attack, Dent had seized on it as a reflection of his half-scarred visage.\n\n",
+                "Two-Face flipped the coin to decide the fates of his victims. Despite Batman's efforts to reform his former ally, Dent was consumed by his fixation on chance, and his crimes were designed to prove out his diametric philosophy."
+            ]
+        },
+        {
+            "name": "TYGER (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/TYGER.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "TYGER, full name TYGER Security, was a private military contractor and correctional security firm. Despite a controversial reputation, TYGER was considered by some to be the best private security company in the world, with their operatives being a combination of ex-military and former SWAT operatives who were not only well-trained and well-equipped, but also come highly recommended.\n\n",
+                "TYGER had been involved in two major incidents that affected Gotham City during Batman's career. Particularly, TYGER was hired by Hugo Strange and Mayor Quincy Sharp to act as the security detail of Arkham City in response to the Joker's massive breakout of Arkham Asylum. Unknown to the general public, the company and its agents had all been brainwashed by Strange to act as his personal army of unquestioning soldiers."
+            ]
+        },
+        {
+            "name": "Victor Zsasz (Arkham)",
+            "image": "assets/BatmanArkhamCharacters/VictorZsasz.jpg",
+            "classification": "Arkham",
+            "archetype": "Villains",
+            "bio": [
+                "A true sociopath, Victor Zsasz grew up in a life of ease, but nonetheless became a serial killer. Indiscriminate in his prey, body count was the only thing that mattered to Zsasz. ",
+                "He took pleasure in arranging the corpses of his victims in life-like poses before carving a mark for each of his victims into his own body. ",
+                "He saved a special spot for Batman. Above all else, Zsasz represented what Batman hated most – pure, unadulterated and remorseless evil.\n\n",
+                "Zsasz proved more capable than regular Thugs who were employed by the super criminals, as he had no care for his own life. Zsasz possessed so little care that he was willing to kill a hostage if he got bored of waiting for his attacker to make a move."
+            ]
+        }
+    ]
+}

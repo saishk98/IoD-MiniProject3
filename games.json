@@ -1,0 +1,37 @@
+{
+    "games": [
+        {
+        "name": "BATMAN: ARKHAM ASYLUM",
+        "image": "assets/Games/BatmanArkhamAsylum(2009).jpg",
+        "year": "2009"
+        },
+        {
+        "name": "BATMAN: ARKHAM CITY",
+        "image": "assets/Games/BatmanArkhamCity(2012).jpg",
+        "year": "2012",
+        "description": [
+            "The inmates have escaped and Batman has his hands full defeating an army of henchmen and some of his most iconic villains. ", 
+            "Scour the rooftops and the seedy underbelly of Gotham City through a series of one-on-one battles with the Joker, Two-Face and more, as well as the Batman: Arkham City Lockdown exclusive - Deathstroke. ",
+            "Choose from several Batman skins and power-ups as you punch, kick and combo your way to cleaning up Gotham City."
+        ]
+        },
+        {
+        "name": "BATMAN: ARKHAM ORIGINS",
+        "image": "assets/Games/BatmanArkhamOrigins(2013).jpg",
+        "year": "2013",
+        "description": [
+            "Batman: Arkham Origins™ is the next installment in the blockbuster Batman: Arkham videogame franchise.  Developed by WB Games Montréal, the game features an expanded Gotham City and introduces an original prequel storyline set several years before the events of Batman: Arkham Asylum and Batman: Arkham City, the first two critically acclaimed games of the franchise. ",
+            "Taking place before the rise of Gotham City’s most dangerous criminals, the game showcases a young and unrefined Batman as he faces a defining moment in his early career as a crime fighter that sets his path to becoming the Dark Knight. As the story unfolds, players will meet many important characters for the first time and forge key relationships."
+        ]
+        },
+        {
+        "name": "BATMAN: ARKHAM KNIGHT",
+        "image":"assets/Games/BatmanArkhamKnight(2015).jpg",
+        "year": "2015",
+        "description": [
+            "In the explosive finale to the Arkham series, Batman faces the ultimate threat against the city he is sworn to protect. The Scarecrow returns to unite an impressive roster of super villains, including Penguin, Two-Face and Harley Quinn, to destroy The Dark Knight forever. ",
+            "Batman: Arkham Knight introduces Rocksteady's uniquely designed version of the Batmobile, which is drivable for the first time in the franchise. The addition of this legendary vehicle, combined with the acclaimed gameplay of the Batman Arkham series, offers gamers the ultimate and complete Batman experience as they tear through the streets and soar across the skyline of the entirety of Gotham City. Be The Batman."
+        ]
+        }
+    ]
+}
