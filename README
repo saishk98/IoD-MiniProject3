@@ -81,7 +81,7 @@ CREATE TABLE vehicles (
 
 🔗 Relationships Between Tables
 Your database relies on foreign keys to establish relationships:
-⚡ Primary Connections
+Primary Connections
 ✅ Characters ↔ Games → (game_id in characters connects to id in games).
 ✅ Missions ↔ Games → (game_id in missions connects to id in games).
 ✅ Abilities ↔ Characters → (character_id in abilities connects to id in characters).
