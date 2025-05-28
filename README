@@ -88,17 +88,8 @@ Primary Connections
 ✅ Gear ↔ Characters → (character_id in gears connects to id in characters).
 ✅ Vehicles ↔ Characters → (character_id in vehicles connects to id in characters).
 
-BatmanDB is a relational database designed to store structured information about Batman characters, games, abilities, gear, locations, missions, and vehicles.
+My BatmanDB is a relational database designed to store structured information about Batman characters, games, abilities, gear, locations, missions, and vehicles.
+The Characters table serves as the central hub, linking to Abilities (unique powers), Gears (tools/weapons), Missions (quests), and Vehicles (transport used by characters).
+Games connect to Characters and Missions, ensuring that each character and quest belongs to a specific Batman game.
+Locations store major places within Gotham and beyond. The foreign keys in each table maintain data integrity, allowing seamless retrieval through structured SQL queries.
 
-- The Characters table serves as the central hub, linking to:
-    - Abilities (unique powers)
-    - Gears (tools/weapons)
-    - Vehicles (transport used by characters)
-
-- Games connect to:
-    - Characters (each character belongs to a specific game)
-    - Missions (each quest belongs to a specific game)
-
-- Locations store major places within Gotham and beyond.
-
-Foreign keys in each table maintain data integrity, allowing seamless retrieval through structured SQL queries.
