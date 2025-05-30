@@ -19,6 +19,15 @@ const characterController = require('../controllers/characterController');
  *     responses:
  *       200:
  *         description: Successfully retrieved characters.
+ *         content:
+ *           application/json:
+ *             example:
+ *               - id: 11
+ *                 name: "Batman"
+ *                 alias: "Bruce Wayne"
+ *               - id: 12
+ *                 name: "Batgirl"
+ *                 alias: "Barbara Gordon"
  */
 router.get('/', characterController.getAllCharacters);
 
@@ -30,8 +39,8 @@ router.get('/', characterController.getAllCharacters);
  *     description: Fetch details of a specific character by ID.
  *     tags: [Characters]
  *     parameters:
- *       - name: id
- *         in: path
+ *       - in: path
+ *         name: id
  *         required: true
  *         schema:
  *           type: integer
@@ -39,6 +48,13 @@ router.get('/', characterController.getAllCharacters);
  *     responses:
  *       200:
  *         description: Successfully retrieved the character.
+ *         content:
+ *           application/json:
+ *             example:
+ *               id: 11
+ *               name: "Batman"
+ *               alias: "Bruce Wayne"
+ *               base_of_operations: "Batcave"
  *       404:
  *         description: Character not found.
  */
@@ -46,91 +62,75 @@ router.get('/:id', characterController.getCharacterById);
 
 /**
  * @swagger
- * /characters:
- *   post:
- *     summary: Create a new character
- *     description: Adds a new character to BatmanDB.
- *     tags: [Characters]
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               name:
- *                 type: string
- *                 example: Batman
- *               alias:
- *                 type: string
- *                 example: Bruce Wayne
- *               role:
- *                 type: string
- *                 example: Hero
- *               base_of_operations:
- *                 type: string
- *                 example: Batcave
- *     responses:
- *       201:
- *         description: Character created successfully.
- */
-router.post('/', characterController.createCharacter);
-
-/**
- * @swagger
- * /characters/{id}:
- *   put:
- *     summary: Update a character by ID
- *     description: Modify details of a specific character.
+ * /characters/{id}/full-profile:
+ *   get:
+ *     summary: Get full character profile (multi-table data)
+ *     description: Fetch all related data for a specific character, including games, abilities, gear, and missions.
  *     tags: [Characters]
  *     parameters:
- *       - name: id
- *         in: path
+ *       - in: path
+ *         name: id
  *         required: true
  *         schema:
  *           type: integer
- *         description: The ID of the character to update.
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               name:
- *                 type: string
- *               alias:
- *                 type: string
- *               role:
- *                 type: string
- *               base_of_operations:
- *                 type: string
+ *         description: The ID of the character to retrieve.
  *     responses:
  *       200:
- *         description: Character updated successfully.
- */
-router.put('/:id', characterController.updateCharacter);
-
-/**
- * @swagger
- * /characters/{id}:
- *   delete:
- *     summary: Delete a character by ID
- *     description: Removes a character from BatmanDB.
- *     tags: [Characters]
- *     parameters:
- *       - name: id
- *         in: path
- *         required: true
- *         schema:
- *           type: integer
- *         description: The ID of the character to delete.
- *     responses:
- *       200:
- *         description: Character deleted successfully.
+ *         description: Successfully retrieved character profile.
+ *         content:
+ *           application/json:
+ *             example:
+ *               id: 11
+ *               name: "Batman"
+ *               alias: "Bruce Wayne"
+ *               base_of_operations: "Batcave"
+ *               games:
+ *                 - id: 1
+ *                   title: "Batman: Arkham Asylum"
+ *               abilities:
+ *                 - id: 1
+ *                   name: "Stealth Takedown"
+ *               gears:
+ *                 - id: 1
+ *                   name: "Batarang"
+ *               missions:
+ *                 - id: 301
+ *                   title: "Save Gotham"
  *       404:
  *         description: Character not found.
  */
-router.delete('/:id', characterController.deleteCharacter);
+router.get('/:id/full-profile', characterController.getCharacterFullProfile);
+
+/**
+ * @swagger
+ * /characters:
+ *   post:
+ *     summary: Create a new character
+ *     description: Add a new character to BatmanDB.
+ *     tags: [Characters]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *               alias:
+ *                 type: string
+ *               alignment:
+ *                 type: string
+ *               description:
+ *                 type: string
+ *             required:
+ *               - name
+ *     responses:
+ *       201:
+ *         description: Character created successfully.
+ *       400:
+ *         description: Invalid input.
+ */
+router.post('/', characterController.createCharacter);
 
 module.exports = router;

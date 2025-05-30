@@ -6,7 +6,7 @@ const locationController = require('../controllers/locationController');
  * @swagger
  * tags:
  *   - name: Locations
- *     description: API endpoints for managing locations.
+ *     description: API endpoints for retrieving locations.
  */
 
 /**
@@ -49,7 +49,7 @@ router.get('/:id', locationController.getLocationById);
  * /locations:
  *   post:
  *     summary: Create a new location
- *     description: Adds a new location to BatmanDB.
+ *     description: Add a new location to BatmanDB.
  *     tags: [Locations]
  *     requestBody:
  *       required: true
@@ -60,72 +60,18 @@ router.get('/:id', locationController.getLocationById);
  *             properties:
  *               name:
  *                 type: string
- *                 example: Gotham City
  *               description:
  *                 type: string
- *                 example: The primary setting for Batman stories.
  *               type:
  *                 type: string
- *                 example: City
+ *             required:
+ *               - name
  *     responses:
  *       201:
  *         description: Location created successfully.
+ *       400:
+ *         description: Invalid input.
  */
 router.post('/', locationController.createLocation);
-
-/**
- * @swagger
- * /locations/{id}:
- *   put:
- *     summary: Update a location by ID
- *     description: Modify details of a specific location.
- *     tags: [Locations]
- *     parameters:
- *       - name: id
- *         in: path
- *         required: true
- *         schema:
- *           type: integer
- *         description: The ID of the location to update.
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               name:
- *                 type: string
- *               description:
- *                 type: string
- *               type:
- *                 type: string
- *     responses:
- *       200:
- *         description: Location updated successfully.
- */
-router.put('/:id', locationController.updateLocation);
-
-/**
- * @swagger
- * /locations/{id}:
- *   delete:
- *     summary: Delete a location by ID
- *     description: Removes a location from BatmanDB.
- *     tags: [Locations]
- *     parameters:
- *       - name: id
- *         in: path
- *         required: true
- *         schema:
- *           type: integer
- *         description: The ID of the location to delete.
- *     responses:
- *       200:
- *         description: Location deleted successfully.
- *       404:
- *         description: Location not found.
- */
-router.delete('/:id', locationController.deleteLocation);
 
 module.exports = router;

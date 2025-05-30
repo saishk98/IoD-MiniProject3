@@ -6,7 +6,7 @@ const gameController = require('../controllers/gameController');
  * @swagger
  * tags:
  *   - name: Games
- *     description: API endpoints for managing games.
+ *     description: API endpoints for retrieving games.
  */
 
 /**
@@ -49,7 +49,7 @@ router.get('/:id', gameController.getGameById);
  * /games:
  *   post:
  *     summary: Create a new game
- *     description: Adds a new game to BatmanDB.
+ *     description: Add a new game to BatmanDB.
  *     tags: [Games]
  *     requestBody:
  *       required: true
@@ -60,77 +60,19 @@ router.get('/:id', gameController.getGameById);
  *             properties:
  *               title:
  *                 type: string
- *                 example: Arkham Asylum
- *               release_year:
- *                 type: integer
- *                 example: 2009
- *               developer:
+ *               releaseDate:
  *                 type: string
- *                 example: Rocksteady Studios
- *               genre:
+ *                 format: date
+ *               description:
  *                 type: string
- *                 example: Action-Adventure
+ *             required:
+ *               - title
  *     responses:
  *       201:
  *         description: Game created successfully.
+ *       400:
+ *         description: Invalid input.
  */
 router.post('/', gameController.createGame);
-
-/**
- * @swagger
- * /games/{id}:
- *   put:
- *     summary: Update a game by ID
- *     description: Modify details of a specific game.
- *     tags: [Games]
- *     parameters:
- *       - name: id
- *         in: path
- *         required: true
- *         schema:
- *           type: integer
- *         description: The ID of the game to update.
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               title:
- *                 type: string
- *               release_year:
- *                 type: integer
- *               developer:
- *                 type: string
- *               genre:
- *                 type: string
- *     responses:
- *       200:
- *         description: Game updated successfully.
- */
-router.put('/:id', gameController.updateGame);
-
-/**
- * @swagger
- * /games/{id}:
- *   delete:
- *     summary: Delete a game by ID
- *     description: Removes a game from BatmanDB.
- *     tags: [Games]
- *     parameters:
- *       - name: id
- *         in: path
- *         required: true
- *         schema:
- *           type: integer
- *         description: The ID of the game to delete.
- *     responses:
- *       200:
- *         description: Game deleted successfully.
- *       404:
- *         description: Game not found.
- */
-router.delete('/:id', gameController.deleteGame);
 
 module.exports = router;

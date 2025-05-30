@@ -6,7 +6,7 @@ const gearsController = require('../controllers/gearsController');
  * @swagger
  * tags:
  *   - name: Gears
- *     description: API endpoints for managing gears.
+ *     description: API endpoints for retrieving and managing gears.
  */
 
 /**
@@ -20,7 +20,7 @@ const gearsController = require('../controllers/gearsController');
  *       200:
  *         description: Successfully retrieved gears.
  */
-router.get('/', gearsController.getAllGear);
+router.get('/', gearsController.getAllGears);  // FIX: Changed `getAllGear` to `getAllGears`
 
 /**
  * @swagger
@@ -49,7 +49,7 @@ router.get('/:id', gearsController.getGearById);
  * /gears:
  *   post:
  *     summary: Create a new gear
- *     description: Adds a new gear to BatmanDB.
+ *     description: Add a new gear to BatmanDB.
  *     tags: [Gears]
  *     requestBody:
  *       required: true
@@ -60,77 +60,20 @@ router.get('/:id', gearsController.getGearById);
  *             properties:
  *               name:
  *                 type: string
- *                 example: Batarang
  *               type:
  *                 type: string
- *                 example: Weapon
  *               description:
  *                 type: string
- *                 example: A bat-shaped throwing weapon.
  *               owner:
  *                 type: string
- *                 example: Batman
+ *             required:
+ *               - name
  *     responses:
  *       201:
  *         description: Gear created successfully.
+ *       400:
+ *         description: Invalid input.
  */
 router.post('/', gearsController.createGear);
-
-/**
- * @swagger
- * /gears/{id}:
- *   put:
- *     summary: Update a gear by ID
- *     description: Modify details of a specific gear.
- *     tags: [Gears]
- *     parameters:
- *       - name: id
- *         in: path
- *         required: true
- *         schema:
- *           type: integer
- *         description: The ID of the gear to update.
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               name:
- *                 type: string
- *               type:
- *                 type: string
- *               description:
- *                 type: string
- *               owner:
- *                 type: string
- *     responses:
- *       200:
- *         description: Gear updated successfully.
- */
-router.put('/:id', gearsController.updateGear);
-
-/**
- * @swagger
- * /gears/{id}:
- *   delete:
- *     summary: Delete a gear by ID
- *     description: Removes a gear from BatmanDB.
- *     tags: [Gears]
- *     parameters:
- *       - name: id
- *         in: path
- *         required: true
- *         schema:
- *           type: integer
- *         description: The ID of the gear to delete.
- *     responses:
- *       200:
- *         description: Gear deleted successfully.
- *       404:
- *         description: Gear not found.
- */
-router.delete('/:id', gearsController.deleteGear);
 
 module.exports = router;

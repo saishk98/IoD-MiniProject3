@@ -6,7 +6,7 @@ const abilityController = require('../controllers/abilityController');
  * @swagger
  * tags:
  *   - name: Abilities
- *     description: API endpoints for managing abilities.
+ *     description: API endpoints for retrieving and managing abilities.
  */
 
 /**
@@ -49,7 +49,7 @@ router.get('/:id', abilityController.getAbilityById);
  * /abilities:
  *   post:
  *     summary: Create a new ability
- *     description: Adds a new ability to BatmanDB.
+ *     description: Add a new ability to BatmanDB.
  *     tags: [Abilities]
  *     requestBody:
  *       required: true
@@ -60,67 +60,16 @@ router.get('/:id', abilityController.getAbilityById);
  *             properties:
  *               name:
  *                 type: string
- *                 example: Martial Arts
  *               description:
  *                 type: string
- *                 example: Mastery of various fighting styles.
+ *             required:
+ *               - name
  *     responses:
  *       201:
  *         description: Ability created successfully.
+ *       400:
+ *         description: Invalid input.
  */
 router.post('/', abilityController.createAbility);
-
-/**
- * @swagger
- * /abilities/{id}:
- *   put:
- *     summary: Update an ability by ID
- *     description: Modify details of a specific ability.
- *     tags: [Abilities]
- *     parameters:
- *       - name: id
- *         in: path
- *         required: true
- *         schema:
- *           type: integer
- *         description: The ID of the ability to update.
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               name:
- *                 type: string
- *               description:
- *                 type: string
- *     responses:
- *       200:
- *         description: Ability updated successfully.
- */
-router.put('/:id', abilityController.updateAbility);
-
-/**
- * @swagger
- * /abilities/{id}:
- *   delete:
- *     summary: Delete an ability by ID
- *     description: Removes an ability from BatmanDB.
- *     tags: [Abilities]
- *     parameters:
- *       - name: id
- *         in: path
- *         required: true
- *         schema:
- *           type: integer
- *         description: The ID of the ability to delete.
- *     responses:
- *       200:
- *         description: Ability deleted successfully.
- *       404:
- *         description: Ability not found.
- */
-router.delete('/:id', abilityController.deleteAbility);
 
 module.exports = router;

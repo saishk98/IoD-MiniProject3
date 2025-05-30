@@ -7,10 +7,13 @@ const options = {
     info: { 
       title: "BatmanDB API", 
       version: "1.0.0", 
-      description: "API for managing characters, abilities, gear, locations, missions, and vehicles." 
+      description: "API for managing characters, games, abilities, gear, locations, missions, and vehicles."
     },
     servers: [
       { url: "http://localhost:3000", description: "Local development server" }
+    ],
+    tags: [
+      { name: "Developer Use Cases", description: "Explains how developers can leverage BatmanDB API." }
     ]
   },
   apis: ["./routes/*.js"],

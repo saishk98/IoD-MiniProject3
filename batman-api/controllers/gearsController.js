@@ -1,21 +1,25 @@
 const Gear = require('../models/gear');
 
-exports.getAllGear = (req, res) => {
-    Gear.getAll((err, results) => err ? res.status(500).json(err) : res.json(results));
+// Get all gears
+exports.getAllGears = (req, res) => {
+    Gear.getAll((err, results) => {
+        if (err) return res.status(500).json(err);
+        res.json(results);
+    });
 };
 
+// Get gear by ID
 exports.getGearById = (req, res) => {
-    Gear.getById(req.params.id, (err, result) => err ? res.status(500).json(err) : res.json(result));
+    Gear.getById(req.params.id, (err, result) => {
+        if (err) return res.status(500).json(err);
+        res.json(result);
+    });
 };
 
+// Create gear
 exports.createGear = (req, res) => {
-    Gear.create(req.body, (err, result) => err ? res.status(500).json(err) : res.json({ message: "✅ Gear added!", id: result.insertId }));
-};
-
-exports.updateGear = (req, res) => {
-    Gear.update(req.params.id, req.body, (err, result) => err ? res.status(500).json(err) : res.json({ message: "✅ Gear updated!" }));
-};
-
-exports.deleteGear = (req, res) => {
-    Gear.delete(req.params.id, (err, result) => err ? res.status(500).json(err) : res.json({ message: "✅ Gear deleted!" }));
+    Gear.create(req.body, (err, result) => {
+        if (err) return res.status(500).json(err);
+        res.json({ message: "✅ Gear added!", id: result.insertId });
+    });
 };
