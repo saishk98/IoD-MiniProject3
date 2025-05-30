@@ -62,10 +62,10 @@ CREATE TABLE vehicles (
 
 🔗 Relationships Between Tables
 Primary Connections: 
-✅ Characters ↔ Games → game_id in characters connects to id in games. 
-✅ Missions ↔ Games → game_id in missions connects to id in games. 
-✅ Abilities ↔ Characters → character_id in abilities connects to id in characters. 
-✅ Gear ↔ Characters → character_id in gears connects to id in characters. 
+✅ Characters ↔ Games → game_id in characters connects to id in games. <br>
+✅ Missions ↔ Games → game_id in missions connects to id in games. <br>
+✅ Abilities ↔ Characters → character_id in abilities connects to id in characters. <br>
+✅ Gear ↔ Characters → character_id in gears connects to id in characters. <br>
 ✅ Vehicles ↔ Characters → character_id in vehicles connects to id in characters.
 
 1️⃣ Clone the Repository
