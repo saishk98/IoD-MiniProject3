@@ -1,9 +1,8 @@
-🔍 Full Database Structure Overview
-Your database consists of multiple interconnected tables, each serving a specific role.
+# 🦇 BatmanDB API - README
 
-1️⃣ Games Table (games)
-- Stores Batman-related video games including titles, genre, and release dates.
-- Acts as a primary reference for characters and missions.
+## 🔍 Full Database Structure Overview  
+My database consists of multiple interconnected tables, each serving a specific role.
+
 CREATE TABLE games (
     id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(255) NOT NULL,
@@ -12,9 +11,6 @@ CREATE TABLE games (
     developer VARCHAR(255)
 );
 
-2️⃣ Characters Table (characters)
-- Stores heroes, villains, and side characters.
-- Linked to games via game_id, ensuring each character belongs to a specific game.
 CREATE TABLE characters (
     id INT PRIMARY KEY AUTO_INCREMENT,
     game_id INT NOT NULL,
@@ -25,9 +21,6 @@ CREATE TABLE characters (
     FOREIGN KEY (game_id) REFERENCES games(id) ON DELETE CASCADE
 );
 
-3️⃣ Missions Table (missions)
-- Stores main quests and side missions appearing within each game.
-- Linked to games via game_id, ensuring missions belong to a specific game title.
 CREATE TABLE missions (
     id INT PRIMARY KEY AUTO_INCREMENT,
     game_id INT NOT NULL,
@@ -37,9 +30,6 @@ CREATE TABLE missions (
     FOREIGN KEY (game_id) REFERENCES games(id) ON DELETE CASCADE
 );
 
-4️⃣ Abilities Table (abilities)
-- Stores unique abilities for characters like Batman’s "Detective Vision" or Joker’s "Chaos Tactics."
-- Linked to characters via character_id, ensuring each ability belongs to the right character.
 CREATE TABLE abilities (
     id INT PRIMARY KEY AUTO_INCREMENT,
     character_id INT NOT NULL,
@@ -48,9 +38,6 @@ CREATE TABLE abilities (
     FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE
 );
 
-5️⃣ Gear Table (gears)
-- Stores equipment used by characters, such as Batman’s "Batarang" or Red Hood’s "Dual Pistols."
-- Linked to characters via character_id, ensuring each gear item belongs to a specific character.
 CREATE TABLE gears (
     id INT PRIMARY KEY AUTO_INCREMENT,
     character_id INT NOT NULL,
@@ -59,18 +46,12 @@ CREATE TABLE gears (
     FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE
 );
 
-6️⃣ Locations Table (locations)
-- Stores important locations in Gotham and beyond, including hideouts, enemy bases, and mission settings.
 CREATE TABLE locations (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
     description TEXT NOT NULL
 );
 
-
-7️⃣ Vehicles Table (vehicles)
-- Stores Batmobiles, motorcycles, and enemy vehicles used in various Batman games.
-- Linked to characters via character_id, ensuring vehicle ownership is maintained.
 CREATE TABLE vehicles (
     id INT PRIMARY KEY AUTO_INCREMENT,
     character_id INT NOT NULL,
@@ -80,25 +61,61 @@ CREATE TABLE vehicles (
 );
 
 🔗 Relationships Between Tables
-Your database relies on foreign keys to establish relationships:
-Primary Connections
-✅ Characters ↔ Games → (game_id in characters connects to id in games).
-✅ Missions ↔ Games → (game_id in missions connects to id in games).
-✅ Abilities ↔ Characters → (character_id in abilities connects to id in characters).
-✅ Gear ↔ Characters → (character_id in gears connects to id in characters).
-✅ Vehicles ↔ Characters → (character_id in vehicles connects to id in characters).
+Primary Connections: 
+✅ Characters ↔ Games → game_id in characters connects to id in games. 
+✅ Missions ↔ Games → game_id in missions connects to id in games. 
+✅ Abilities ↔ Characters → character_id in abilities connects to id in characters. 
+✅ Gear ↔ Characters → character_id in gears connects to id in characters. 
+✅ Vehicles ↔ Characters → character_id in vehicles connects to id in characters.
 
-BatmanDB is a relational database designed to store structured information about Batman characters, games, abilities, gear, locations, missions, and vehicles.
+1️⃣ Clone the Repository
+git clone https://github.com/saishk98/IoD-MiniProject3.git
+cd IoD-MiniProject3
 
-- The Characters table serves as the central hub, linking to:
-    - Abilities (unique powers)
-    - Gears (tools/weapons)
-    - Vehicles (transport used by characters)
+2️⃣ Install Dependencies
+npm install
 
-- Games connect to:
-    - Characters (each character belongs to a specific game)
-    - Missions (each quest belongs to a specific game)
+3️⃣ Start the API
+npm start
 
-- Locations store major places within Gotham and beyond.
+4️⃣ Set Up MySQL Database
+mysql -u root -p
+source BatmanDB.sql;
 
-Foreign keys in each table maintain data integrity, allowing seamless retrieval through structured SQL queries.
+📌 API Documentation
+Swagger UI: http://localhost:3000/api-docs
+
+🔍 Example API Calls
+GET http://localhost:3000/characters/{id}/full-profile
+
+🔹 Example Response:
+{
+    "id": 11,
+    "name": "Batman",
+    "alias": "Bruce Wayne",
+    "base_of_operations": "Batcave",
+    "games": [
+        { "id": 1, "title": "Batman: Arkham Asylum" },
+        { "id": 2, "title": "Batman: Arkham City" },
+        { "id": 3, "title": "Batman: Arkham Origins" },
+        { "id": 4, "title": "Batman: Arkham Knight" }
+    ],
+    "abilities": [
+        { "id": 1, "name": "Stealth Takedown" },
+        { "id": 2, "name": "Detective Vision" },
+        { "id": 3, "name": "Glide Attack" },
+        { "id": 100, "name": "Remote Claw" }
+    ],
+    "gears": [
+        { "id": 1, "name": "Batarang" },
+        { "id": 2, "name": "Grappling Hook" },
+        { "id": 3, "name": "Smoke Pellets" }
+    ],
+    "missions": [
+        { "id": 301, "title": "Save Gotham" },
+        { "id": 302, "title": "Defeat Joker" }
+    ]
+}
+
+👨‍💻 Developer Use Cases
+Front-End Developers - Build a character selection screen with complete details. ✔ API Endpoint: /characters/{id}/full-profile
