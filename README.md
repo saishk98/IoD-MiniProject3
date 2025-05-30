@@ -68,17 +68,17 @@ Primary Connections:
 ✅ Gear ↔ Characters → character_id in gears connects to id in characters. <br>
 ✅ Vehicles ↔ Characters → character_id in vehicles connects to id in characters.
 
-1️⃣ Clone the Repository
+1️⃣ Clone the Repository <br>
 git clone https://github.com/saishk98/IoD-MiniProject3.git
 cd IoD-MiniProject3
 
-2️⃣ Install Dependencies
+2️⃣ Install Dependencies <br>
 npm install
 
-3️⃣ Start the API
+3️⃣ Start the API <br>
 npm start
 
-4️⃣ Set Up MySQL Database
+4️⃣ Set Up MySQL Database <br>
 mysql -u root -p
 source BatmanDB.sql;
 
@@ -88,34 +88,34 @@ Swagger UI: http://localhost:3000/api-docs
 🔍 Example API Calls
 GET http://localhost:3000/characters/{id}/full-profile
 
-🔹 Example Response:
+🔹 Example Response: <br>
 {
-    "id": 11,
-    "name": "Batman",
-    "alias": "Bruce Wayne",
-    "base_of_operations": "Batcave",
-    "games": [
-        { "id": 1, "title": "Batman: Arkham Asylum" },
-        { "id": 2, "title": "Batman: Arkham City" },
-        { "id": 3, "title": "Batman: Arkham Origins" },
-        { "id": 4, "title": "Batman: Arkham Knight" }
-    ],
-    "abilities": [
-        { "id": 1, "name": "Stealth Takedown" },
-        { "id": 2, "name": "Detective Vision" },
-        { "id": 3, "name": "Glide Attack" },
-        { "id": 100, "name": "Remote Claw" }
-    ],
-    "gears": [
-        { "id": 1, "name": "Batarang" },
-        { "id": 2, "name": "Grappling Hook" },
-        { "id": 3, "name": "Smoke Pellets" }
-    ],
-    "missions": [
-        { "id": 301, "title": "Save Gotham" },
-        { "id": 302, "title": "Defeat Joker" }
-    ]
+    "id": 11, <br>
+    "name": "Batman", <br>
+    "alias": "Bruce Wayne", <br>
+    "base_of_operations": "Batcave", <br>
+    "games": [ <br>
+        { "id": 1, "title": "Batman: Arkham Asylum" }, <br>
+        { "id": 2, "title": "Batman: Arkham City" }, <br>
+        { "id": 3, "title": "Batman: Arkham Origins" }, <br>
+        { "id": 4, "title": "Batman: Arkham Knight" } <br>
+    ], <br>
+    "abilities": [ <br>
+        { "id": 1, "name": "Stealth Takedown" }, <br>
+        { "id": 2, "name": "Detective Vision" }, <br>
+        { "id": 3, "name": "Glide Attack" }, <br>
+        { "id": 100, "name": "Remote Claw" } <br>
+    ], <br>
+    "gears": [ <br>
+        { "id": 1, "name": "Batarang" }, <br>
+        { "id": 2, "name": "Grappling Hook" }, <br>
+        { "id": 3, "name": "Smoke Pellets" } <br>
+    ], <br>
+    "missions": [ <br>
+        { "id": 301, "title": "Save Gotham" }, <br>
+        { "id": 302, "title": "Defeat Joker" } <br>
+    ] <br>
 }
 
-👨‍💻 Developer Use Cases
+👨‍💻 Developer Use Cases <br>
 Front-End Developers - Build a character selection screen with complete details. ✔ API Endpoint: /characters/{id}/full-profile
