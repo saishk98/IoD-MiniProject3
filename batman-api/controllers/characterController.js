@@ -36,7 +36,7 @@ exports.getCharacterFullProfile = (req, res) => {
         gears: [],
         missions: []
       };
-
+      
       results.forEach(row => {
         if (row.game_id && !characterData.games.find(g => g.id === row.game_id)) {
           characterData.games.push({ id: row.game_id, title: row.game_title });
